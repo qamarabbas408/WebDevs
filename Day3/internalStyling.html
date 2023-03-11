@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Internal CSS -->
+    <style>
+        /* selector */
+
+        /* Universal Selector */
+        * {
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* tag selector */
+
+        h1 {
+            color: yellowgreen;
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+            padding: 5rem;
+            width: 50%;
+            display: inline;
+        }
+
+        img {
+            width: 30%;
+            height: 10rem;
+            border: 1px solid green;
+            border-radius: 55px;
+            padding: 1rem;
+        }
+
+        div.introduction {
+            width: 100%;
+            border: 1px solid black;
+            color:red;
+        } 
+        div.userDetails{
+          
+            border: 1px solid orange;
+            /* margin: 10px; */
+            padding: 10px;
+            margin-top:10px;
+            padding-left: 20px;
+        }
+
+        /* class selector  */
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div class="introduction">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, possimus, architecto inventore exercitationem
+            nobis nam totam ea velit fugiat consequatur fugit mollitia vitae nisi culpa dolor placeat, assumenda numquam
+            natus laboriosam nostrum et. Quam iure temporibus vitae ut! Dolorem itaque provident cumque quisquam eaque
+            error assumenda ex, repudiandae a ea beatae ad veniam optio quasi vitae cum, ratione blanditiis. Eos
+            aspernatur modi quisquam? Deserunt distinctio tempora pariatur consequatur repudiandae. Eos deserunt aliquam
+            voluptatum. Deserunt, ullam! Ipsam earum porro ab impedit eos officia veritatis! Pariatur nesciunt
+            distinctio tempora eum ea obcaecati facere porro voluptates, temporibus ullam, rerum reiciendis accusamus
+            nemo saepe quos.</p>
+        <img src="../Day2/assets/banner.png" alt="">
+    </div>
+
+    <div class="userDetails">
+        <form action="index.html">
+            <label>Username</label><br>
+            <input type="text" placeholder="Enter you username">
+            <br>
+            <label>Password</label><br>
+            <input type="password" placeholder="Enter your password"><br>
+            <label>Email</label>
+            <input type="email"><br>
+            <label>Please select your Image</label>
+            <input type="file" name="" id=""><br>
+            <br>
+            <select name="" id="">
+                <option value="">Pakistan</option>
+                <option value="">Afganistan</option>
+                <option value="">India</option>
+                <option value="">China</option>
+            </select>
+            <br>
+            <input type="checkbox">
+            <label for="">Do you Accept our Terms and conditions</label><br>
+
+            <label for="">Male</label> <input type="radio" name="gender"> <br>
+            <label for="">Female</label> <input type="radio" name="gender">
+            <br>
+            <input type="number">
+            <label for="">Please Enter your Address</label>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Enter your Address"></textarea>
+            <br>
+            <input type="color" name="" id=""><label>Color Picker</label>
+
+            <br>
+            <input type="submit" value="Login">
+
+
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+
+</html>
