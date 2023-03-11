@@ -38,7 +38,7 @@
             padding: 1rem;
         }
 
-        div.introduction {
+        .introduction {
             width: 100%;
             border: 1px solid black;
             color:red;
@@ -51,7 +51,20 @@
             margin-top:10px;
             padding-left: 20px;
         }
-
+        div.userDetails .usernameInput {
+            font-size: 5rem;
+        }
+        div.userDetails .btn{
+            background: orange;
+            padding:1rem;
+            border:none;
+            margin: 1rem;
+            cursor:pointer;
+        }
+        div.userDetails .btn:hover{
+            background: rgb(158, 105, 7);
+            color:white;
+        }
         /* class selector  */
     </style>
 </head>
@@ -73,7 +86,8 @@
     <div class="userDetails">
         <form action="index.html">
             <label>Username</label><br>
-            <input type="text" placeholder="Enter you username">
+
+            <input class="usernameInput" type="text" placeholder="Enter you username">
             <br>
             <label>Password</label><br>
             <input type="password" placeholder="Enter your password"><br>
@@ -102,7 +116,7 @@
             <input type="color" name="" id=""><label>Color Picker</label>
 
             <br>
-            <input type="submit" value="Login">
+            <input class="btn" type="submit" value="Login">
 
 
             <input type="reset" value="Reset">
