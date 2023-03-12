@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Elements</title>
+    <style>
+        article p::first-letter {
+            font-size: 200%;
+        }
+
+        article p::first-line {
+            color: royalblue
+        }
+
+        /* combining psuedo-class and psudeo-elements */
+        article p:first-child::first-line {
+            background-color: aliceblue;
+        }
+
+        /* ::before */
+        p.box::before{
+            content: "I am coming with you and i will be displayed before you";
+            color:bisque;
+        }
+        /* ::after */
+        a::after{
+            content: "  ➥";
+        }
+
+        /* another Example */
+        p.bottom::before{
+            content:"";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Psuedo Elements:: Pseudo-elements behave in a similar way. 
+    However, they act as if you had added a whole new HTML element into the markup, 
+    rather than applying a class to existing elements. -->
+    <article>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo perferendis aliquam ipsam pariatur possimus
+            aspernatur dolorem, aperiam vero eligendi nam!</p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Laboriosam blanditiis dolor sit iure eligendi dolorum fugit, eveniet dignissimos tempora? Earum, nam.
+            Velit, natus maxime accusantium iste quidem reprehenderit, maiores aliquam blanditiis, laborum esse nulla
+            alias sint excepturi suscipit distinctio atque iusto incidunt quod laudantium delectus eos ad sunt
+            aspernatur ullam. Ipsum minima neque cum, mollitia a porro, aliquid maiores consequatur recusandae, labore
+            quibusdam perspiciatis aut? Quae nobis similique iste voluptas officiis ullam odit, quidem commodi
+            repudiandae et fugit nemo quis ipsam qui, provident in beatae maiores doloribus ducimus odio illum aut.
+            Laborum dignissimos maiores, laboriosam accusamus doloribus nemo sunt odio.s
+            Nemo perferendis aliquam ipsam pariatur possimus aspernatur dolorem, aperiam vero eligendi nam!</p>
+    </article>
+
+    <!-- ::after and ::before 
+    There are a couple of special pseudo-elements,
+     which are used along with the content property to insert content into your document using CSS.
+     The use of the ::before and ::after pseudo-elements along with the content property is referred to as "Generated Content
+    -->
+    <p class="box">I have some Text and I am going to display it in Browser</p>
+
+    <!-- A more valid use of these pseudo-elements is to insert an icon -->
+    <a href="">ReadMore</a>
+
+    <!-- another example -->
+    <p class="bottom">Add a Square Above Me</p>
+</body>
+
+</html>

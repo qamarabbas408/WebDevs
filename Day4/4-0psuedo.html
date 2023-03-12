@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudeo</title>
+</head>
+<style>
+    /* :invalid */
+    div.simple-form form label {
+        display: block;
+        margin-top: 1em;
+    }
+
+    div.simple-form form input:invalid {
+        background-color: ivory;
+        border: none;
+        outline: 1px solid red;
+        border-radius: 5px;
+    }
+
+    /* anotherform */
+    div.login-form fieldset {
+        width: 50%;
+        padding: 1rem;
+    }
+
+    div.login-form input {
+        border-radius: 5px;
+    }
+
+    div.login-form input:required {
+        border-color: green;
+    }
+
+    .login-form input:invalid {
+        outline-color: red;
+    }
+
+    .login-form input:valid {
+        outline: 2px solid yellow;
+    }
+</style>
+
+<body>
+    <!-- Psudeo-Class :: Selects element in a specific state e.g. :hover, :visited ,:first-child -->
+    <!-- :last-child -->
+    <!-- :only-child -->
+    <!-- :invalid -->
+    <div class="simple-form">
+        <form>
+            <label>Email Address:</label>
+            <input type="email">
+
+            <label>Secret Code: (lower case letters)</label>
+            <input type="text" value="test" pattern="[a-z]+">
+
+            <label>Your age: (18+)</label>
+            <input type="number" value="5" min="18">
+
+            <label><input type="checkbox" required checked> - Do you agree to ToS?</label>
+        </form>
+    </div>
+
+
+    <!-- Another Form  -->
+    <h3>Login</h3>
+    <div class="login-form">
+        <form action="">
+            <fieldset>
+                <label for="">Username</label>
+                <input type="text" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="">Email</label>
+                <input type="email" name="" required id="">
+            </fieldset>
+
+        </form>
+    </div>
+    <!-- Task2  -->
+    <!-- Psudeo-Elements -->
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <style>
+        /* form{
+            padding: 5rem;
+            margin: 5rem;
+        }
+        form input{
+            padding: 1rem;
+        } */
+       
+        input, textarea{
+            font-family: monospace;
+            width: 100%;
+        }
+        input:required, textarea:required{
+            outline-color: yellow;
+        }
+        form:invalid .btn{
+            background: red;
+            pointer-events: none;
+        }
+
+        /* Hide fieldset after an invalid fieldset */
+        fieldset:invalid   ~ fieldset {
+            display:none
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset> 
+            <label for="">Name</label>
+            <input type="text" name="" id="" required>
+        </fieldset>
+        <fieldset>
+            <label for="">Email</label>
+            <input type="email" required>
+        </fieldset>
+        <fieldset>
+            <label for="">Message</label>
+            <textarea required> </textarea>
+        </fieldset>
+        <input class="btn" type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        .special {
+            color: orange;
+        }
+
+        /* Descendant Selector */
+        li.special em {
+            font-weight: 600;
+            color: red;
+        }
+
+        /* Sibling Selector */
+        div.descendant h1+p {
+            color: green;
+        }
+
+        /* :first-child Selector */
+        div.firstChild h1:first-child {
+            color: blue;
+        }
+
+        /* general sibling selector */
+        div.siblings p ~ span{
+            color:blueviolet;
+
+
+        }
+
+        /* Anchor Tag States */
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: orange;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: greenyellow;
+        }
+
+        /* Cascade */
+        .para p {
+            color: red;
+        }
+
+        .para p {
+            color: green;
+        }
+
+        /* Specificity: class is more specific then tag */
+        .para p {
+            color: yellow;
+        }
+
+        .para .someText {
+            color: red;
+        }
+
+        /* functions */
+        div.someData p {
+            width: calc(90% - 100px);
+            /*space ka khayal rakhain*/
+            background: aliceblue;
+        }
+
+        div.square {
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+
+        div.square {
+            transform: rotate(0.8turn);
+        }
+
+        div.square:hover {
+            transform: rotate(0);
+        }
+
+        /* short Hands */
+        div.shorthands {
+            border: 1px solid black;
+            /* margin: 20px; */
+            margin: 20px 20px 20px 20px;
+            /* padding: 10px; */
+            padding: 10px 10px 10px 10px;
+        }
+
+        /* Media Queries */
+        @media (max-width:768px) {
+            * {
+                background: black;
+            }
+        }
+
+        @media (max-width: 425px) {
+            * {
+                background: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tag Selector -->
+    <!-- Class Selector -->
+
+    <!-- Descendant Combinator / Selector -->
+    <ul>
+        <li>Item one</li>
+        <li>Item two</li>
+        <li class="special">Item <em>three</em></li>
+    </ul>
+
+    <!-- Adjacent Sibling Combinator / Selector -->
+    <div class="descendant">
+        <h1>About Me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, doloribus!</p>
+        <p>I am a Software Engineer and working in various Languages</p>
+    </div>
+
+
+    <!-- firstChild Selector -->
+    <div class="firstChild">
+        <h1>About Me</h1>
+        <h1>I am Abbas</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, doloribus!</p>
+        <p>I am a Software Engineer and working in various Languages</p>
+    </div>
+    
+    <!-- general sibling selector -->
+    <h2>General Sibling Selector</h2>
+    <div class="siblings">
+        <span>This is not red.</span>
+        <p>Here is a paragraph.</p>
+        <code>Here is some code.</code>
+        <span>And here is a red span!</span>
+        <span>And this is a red span!</span>
+        <code>More code…</code>
+        <div>How are you?</div>
+        <p>Whatever it may be, keep smiling.</p>
+        <h1>Dream big</h1>
+        <span>And yet again this is a red span!</span>
+    </div>
+
+    <!-- Anchor Tags Styling based on state-->
+    <a class="link1" style="display:block" href="floatLeft.html">Link1 </a>
+
+    <!-- Specificity  and Cascading -->
+    <!-- What if two selector target same element -->
+    <div class="para">
+        <p class="someText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, optio?</p>
+    </div>
+
+
+    <!-- Functions -->
+    <div class="someData">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo eius vitae aliquid, natus hic nobis
+            magnam rerum perferendis adipisci, assumenda quidem deleniti cumque eum illo accusamus placeat optio
+            consequatur. Odio perspiciatis consequatur, corporis labore minus saepe dolorem commodi quos ipsa excepturi
+            nostrum quaerat voluptatem provident facere aperiam magni. Fugit!</p>
+    </div>
+
+    <div class="square">
+
+    </div>
+
+    <!-- ShortHands -->
+    <div class="shorthands">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, optio impedit, reiciendis dolorum cumque quasi
+        a beatae autem minus, veniam suscipit iusto saepe fugiat deleniti assumenda explicabo repellat eligendi?
+        Possimus, ad asperiores. Error, nesciunt provident repellat cumque alias aspernatur. Porro, inventore ab
+        provident ad perferendis consequatur, eaque harum pariatur laudantium commodi quas sed. Laborum quidem sint
+        corporis labore excepturi ipsum odio, optio cupiditate animi, natus praesentium quam totam placeat voluptas
+        beatae provident ducimus cum. Illum nemo nihil quae sunt, aut in corrupti molestiae enim consequatur repellendus
+        obcaecati ut expedita aspernatur at id facilis architecto esse, accusantium voluptatum nesciunt. Saepe, labore.
+    </div>
+
+    <!-- @rules:: Rules that start with @ e.g Media Quries -->
+</body>
+
+</html>
