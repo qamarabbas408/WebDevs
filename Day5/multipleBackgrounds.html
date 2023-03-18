@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Background</title>
+    <style>
+        div {
+            background-image: url(../assets/ex-circle-corner.gif), url(../assets/ex-circle-corner.gif), url(../assets/ex-circle-corner.gif);
+            background-position: left 50px, center top, right bottom;
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-color: aliceblue;
+            background-attachment: scroll;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .width{
+            width: 50%;
+        }
+        .center-element{
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 25%;
+            margin-bottom: 25%;
+        }
+        .border {
+            border: 1px solid black;
+        }
+        .ls{
+            letter-spacing: 1.5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .fs-1{
+            font-size: 30px;
+        }
+        .fs-2{
+            font-size: 25px;
+        }
+        .fs-3{
+            font-size: 20px;
+        }
+        .fs-4{
+            font-size: 15px;
+        }
+        .fs-5{
+            font-size: 10px;
+        }
+        .left-align{
+            text-align: left; 
+        }
+        .text-justity{
+            text-align:justify;
+        }
+        .p-0{
+            padding:0;
+        }
+        .m-0{
+            margin:0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center width center-element border">
+        <h1 class="ls fs-1">Current Situation in Pakistant</h1>
+        <p class="ls fs-4">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci optio laboriosam libero totam rerum. Soluta dolorum hic quis voluptas enim tenetur, pariatur cupiditate at, laborum, earum error vel suscipit nulla. adipisicing elit. Magni at dicta laudantium, ipsum sint suscipit rem quos facere repellendus praesentium!</p>
+        <h1 class="fs-3 p-0 ls left-align m-0">Karachi </h1>
+        <p class="fs-4 ls text-justify m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consectetur atque quisquam ipsa placeat nisi, soluta totam non, animi fuga optio officia id laboriosam minima unde provident cum voluptatem voluptate. Culpa eaque adipisci obcaecati ipsum veritatis nulla, repellendus ex temporibus at in eos maiores libero.</p>
+    </div>
+</body>
+
+</html>

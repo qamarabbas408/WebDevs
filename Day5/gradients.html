@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+
+    <style>
+        .linear-gradient {
+            background-image: linear-gradient(360deg, white, black);
+        }
+
+        .linear-gradient-2 {
+            background-image: linear-gradient(90deg, yellow, orange 25%, blue);
+
+        }
+
+        .banner {
+            width: 49%;
+            float: left;
+        }
+
+        .banner2 {
+            width: 49%;
+            float: left;
+        }
+
+        .height {
+            height: 50vh;
+            border: 1px solid black;
+        }
+
+        .banner h1 {
+            color: white;
+        }
+
+        button.btn-gradient {
+            padding: 15px;
+            background-image: linear-gradient(to bottom, yellow, orange 25%, blue) !important; 
+        }
+        button.btn-gradient:hover {
+            background-image: linear-gradient(to bottom, rgb(25, 79, 196), yellow 25%, green) !important; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner height linear-gradient">
+        <h1>Hello, Welcome to Our Site</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit porro sequi esse odio reiciendis laboriosam
+            corrupti tempore repellendus necessitatibus? Molestiae beatae quos ex eligendi autem incidunt? Cupiditate
+            blanditiis dolorem itaque recusandae iste laudantium, repellendus amet.</p>
+    </div>
+    <div class="banner2 height linear-gradient-2">
+
+    </div>
+
+    <button class="btn-gradient">Click Me</button>
+
+    <div class="radial-gradient height width">
+
+    </div>
+</body>
+
+</html>

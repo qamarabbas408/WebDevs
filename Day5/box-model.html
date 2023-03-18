@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box {
+            background: #c2f670;
+            width: 500px;
+            height: 150px;
+            padding: 20px;
+            border: 2px solid gray;
+            margin: 20px;
+            /* box-sizing: content-box;  default behaviour of box model  */
+        }
+
+
+        .div1 {
+            width: 300px;
+            border: 1px solid blue;
+        }
+
+        .div2 {
+            width: 300px;
+            padding: 50px;
+            border: 1px solid red;
+        }
+
+        .div1-resolved{
+            width: 300px;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        .div2-resolved{
+            width: 300px;
+            height: auto;
+            padding: 50px;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ! 1. Box Model data/box.jpg -->
+    <!-- ! 2. Box Dimensions are by default equal to width of browser window -->
+
+    <!-- Total Width: 20px + 2px + 20px + 500px width + 20px + 2px + 20px = 584 pixels -->
+    <!-- content-box == default behaviour of html elements -->
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, neque?
+    </div>
+    <!-- content-box use case -->
+    <!-- both boxes are applied same widths and have same content but still 
+    div2 is larger then div1  -->
+    <div class="div1">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, vel.</p>
+    </div>
+    <div class="div2">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, vel.</p>
+    </div>
+
+
+    <!-- !SOLUTION to content-box is border-box -->
+    <h2>Solution to content-box</h2>
+    <div class="div1-resolved">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, vel.</p>
+    </div>
+    <div class="div2-resolved">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, vel.</p>
+    </div>
+
+    <!-- Total Width: 300px -->
+</body>
+
+</html>

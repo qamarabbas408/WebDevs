@@ -14,7 +14,9 @@
         form input{
             padding: 1rem;
         } */
-       
+        form {
+            margin: 10rem;
+        }
         input, textarea{
             font-family: monospace;
             width: 100%;
@@ -24,11 +26,11 @@
         }
         form:invalid .btn{
             background: red;
-            pointer-events: none;
+            pointer-events: none; /* disable */
         }
 
         /* Hide fieldset after an invalid fieldset */
-        fieldset:invalid   ~ fieldset {
+        fieldset:invalid  ~ fieldset {
             display:none
         }
     </style>
