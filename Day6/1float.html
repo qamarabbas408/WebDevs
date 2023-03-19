@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .float-show{
+            width: 500px;
+        }
+        .float-show img{
+            /* float: right;  */
+            float:left;
+            /* text is wrapped around floating object */
+
+            /* add some style  */
+            margin: 25px;
+        }
+        /* .float-show p{
+            display: inline;
+        } */
+
+        .img-inside-p p{
+            border: 1px solid black;
+            /* overflow: auto; */
+        }
+        .img-inside-p img{
+            float:left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="float-show">
+        <img src="../assets/ex-circle-corner.gif" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam unde laudantium quod temporibus sunt
+            tempora optio dolore voluptates quas dolorem delectus ad consequuntur, voluptatibus eos enim provident
+            soluta repellat a Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium impedit eius cumque, ut animi quis vitae totam quasi tempora culpa ipsam provident quaerat soluta consequuntur expedita similique sint delectus qui assumenda. Laudantium libero iure, minus omnis optio cupiditate sed excepturi, consequatur nostrum magnam quis..</p>
+    </div>
+<br>
+    <div class="img-inside-p">
+        <p><img src="../assets/ex-circle-corner.gif" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consequuntur, expedita nemo aperiam harum eveniet in doloribus veritatis. Id ad, magni beatae sapiente qui possimus animi ex nesciunt dolorum recusandae impedit, commodi consequuntur ipsam officiis. Culpa impedit veniam iure fuga fugiat facilis quas doloribus tempore architecto, quaerat ut necessitatibus placeat veritatis sunt nemo minus expedita.
+
+        </p>
+    </div>
+</body>
+
+</html>
