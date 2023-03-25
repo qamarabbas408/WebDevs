@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        height: 80vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .position-relative {
+        position: relative;
+    }
+
+    .position-absolute {
+        position: absolute;
+    }
+
+    .border {
+        border: 1px solid black;
+        background-image: url(../../assets/sunset.jpg);
+    }
+
+    .content {
+        border: .5px solid white;
+        border-radius: 6px;
+        width: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1em;
+        color: white;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .content h2 {
+        font-size: 30px;
+        line-height: 45px;
+        color: orange;
+    }
+
+    .content p {
+        /* text-align: justify; */
+        line-height: 30px;
+        margin-bottom: .5em;
+    }
+
+    .content a {
+        text-decoration: none;
+        font-size: 20px;
+        background: orange;
+        padding-left: 1em;
+        padding-right: 1em;
+        border-radius: 6px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        color: white;
+    }
+
+    .content a:hover {
+        background: blue;
+        color: white;
+    }
+
+    .overlay {
+        /* background: black; */
+        background-image: linear-gradient(to right, orange, black, orange);
+        height: 100%;
+        width: 100%;
+        opacity: .5;
+    }
+</style>
+
+<body>
+    <section class="container border position-relative">
+        <div class="overlay"></div>
+        <div class="content position-absolute">
+            <h2>Welcome To Our Site!</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam officiis explicabo fuga!</p>
+            <a href="">Explore</a>
+        </div>
+    </section>
+
+</body>
+
+</html>

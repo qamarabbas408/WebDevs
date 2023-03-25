@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .showcase {
+            background-color: transparent;
+            background-image: url(../../assets/sunset.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            height: 90vh;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .border {
+            border: 1px solid white;
+        }
+
+        .m-0 {
+            margin: 0;
+        }
+
+        .p-0 {
+            padding: 0;
+        }
+
+        .showcase-text {
+            position: absolute;
+            width: 25%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 1em;   
+        }
+        .overlay{
+            background:linear-gradient(to right, black 20%,rgb(215, 198, 9) 50% , black 20%);
+            height: 100%;
+            width:100%;
+            position: absolute;
+            opacity: .5;
+        }
+    
+        
+    </style>
+</head>
+
+<body>
+    <section class="showcase border">
+        <div class="overlay"></div>
+        <div class="showcase-text border">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officiis numquam, perferendis facere libero
+                commodi.</p>
+            <a href="">Register Now</a>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

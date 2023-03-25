@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .box1 {
+            background: red;
+            /* z-index: 1; */
+            /* right: 20%; */
+        }
+
+        .box2 {
+            background: green;
+            /* top: 20%; */
+            /* bottom: 20%; */
+            /* left: 45%; */
+            
+            
+        }
+
+        .box3 {
+            background: blue;
+            
+        }
+        .box4{
+            background:orange;
+        }
+        .box5{
+            background: yellow;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .container {
+            padding-bottom: 100%;
+        }
+
+        .clear {
+            clear: left;
+        }
+        .border{
+         border:1px solid black; 
+        }
+        .box-container{
+            overflow: auto;
+            padding:1em;
+            /* height: 60vh; */
+            
+        }
+        /* position Rules */
+        .position-relative{
+            position: relative;
+        }
+        .position-static{
+            position: static;
+        }
+        .position-absolute{
+            position:absolute;
+        }
+        .position-fixed{
+            position:fixed;
+        }
+        .postion-sticky{
+            position:sticky
+        }
+    </style>
+</head>
+
+<body>
+    <!--! position  1. Static 2. Releative 3. Absolute 4. fixed -->
+    <!--? position:static: Default behaviour of html elements -->
+    <div class="container ">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repudiandae, commodi, reiciendis nam beatae
+            aut totam tenetur iusto eius fugit inventore laboriosam vero doloribus.</p>
+        <div class="box-container border">
+            <div class="box1 box float-left position-absolute"></div>
+            <div class="box2 box float-left position-relative"></div>
+            <div class="box3 box float-left position-static"></div>
+            <div class="box4 box float-left position-fixed"></div>
+            <div class="box5 box float-left position-sticky"></div>
+
+            
+            
+        </div>
+        <div class="clear"></div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos optio eveniet at quo, unde adipisci
+            quas eligendi hic dolore nostrum rerum nisi tempore fugit! Rem vel numquam aut quos et fuga molestias, sed
+            in incidunt necessitatibus officiis nobis fugiat nostrum quo! Eos nulla dolores modi consectetur excepturi
+            inventore hic.</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nostrum quos at unde reiciendis aperiam
+            voluptates voluptatem architecto rerum ab? Nihil nostrum necessitatibus cumque rerum debitis maxime dolores
+            nobis totam ab eum enim quae explicabo, neque voluptatem officiis sint. Voluptatum sed reprehenderit ipsa
+            dolorum dignissimos quaerat dolore delectus similique dolorem?</p>
+    </div>
+</body>
+
+</html>
