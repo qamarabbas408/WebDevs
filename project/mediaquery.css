@@ -1,5 +1,89 @@
 @media (max-width:768px) {
+    .navigation{
+        padding:0 !important;
+    }
     .navigation ul {
+        margin-top: 2em;
+        clear:both;
         display: none;
+    }
+    .navigation ul li{
+        float:none !important;
+        display:block;
+        margin:0 !important;
+
+    }
+    .navigation #hamburger-btn{
+        display: inline;
+    }
+
+    /* services */
+  
+    .services .col-3{
+        height: auto;
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+    .services .col-9{
+        font-size: 12px;
+        width: 100%;
+    }
+    /* END services */
+
+    /* dont-miss */
+   .dont-miss div.img{
+        display: none !important;
+    }
+   
+    /* END dont-miss */
+    section.explore-more {
+        margin-top:.8em !important;
+        border: 1px solid black;
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    section.explore-more .overlay{
+        z-index:-1 !important;
+    }
+    section.explore-more .explore-content{
+        position:static !important;
+    }
+   
+
+}
+/* for screens equal or less then 425px  */
+@media (max-width: 425px){
+    
+    .services img{
+      height: 250px !important;
+      width: 250px;
+    }
+    .services .card {
+        box-shadow: none !important;
+    }
+    .services .card h3 {
+    text-decoration: none !important;
+    width: 50% !important;
+    left: 25%;
+    }
+    .services .col-4{
+        width: 100%;
+    }
+    .dont-miss .col-6{
+        width: 100%;
+    }
+    .dont-miss .col-6 img {
+        display: none;
+    
+    }
+    .dont-miss .col-6 .d-content {
+        position: static !important;
+        transform: none !important;
+    }
+    /* explore-more */
+    section.explore-more .explore-content {
+        width: 100% !important;
     }
 }

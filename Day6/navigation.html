@@ -16,29 +16,35 @@
         nav.navigation .site-logo {
             float: left;
         }
-        nav.navigation .site-logo img{
+
+        nav.navigation .site-logo img {
             transform: rotate(290deg);
             transition: transform 0.3 ease-in-out;
 
         }
-        nav.navigation .site-logo img:hover{
+
+        nav.navigation .site-logo img:hover {
             transform: rotate(120deg);
             transition: .5s;
 
         }
-        nav.navigation .site-logo h2{
-            transition: background .2s ease-in-out;  /*Adds a smooth transition effect*/
+
+        nav.navigation .site-logo h2 {
+            transition: background .2s ease-in-out;
+            /*Adds a smooth transition effect*/
         }
-        nav.navigation .site-logo h2:hover{
+
+        nav.navigation .site-logo h2:hover {
             /* border-bottom: .5px solid orange; */
             background: aliceblue;
             cursor: pointer;
         }
-        nav.navigation .site-logo h2{
+
+        nav.navigation .site-logo h2 {
             display: inline;
-            color:rgb(85, 81, 74);
+            color: rgb(85, 81, 74);
             text-transform: uppercase;
-            color:plum;
+            color: plum;
         }
 
         nav.navigation ul {
@@ -65,6 +71,25 @@
             background: yellowgreen;
             cursor: pointer;
         }
+        nav.navigation .icon ion-icon{
+            float:right;
+            font-size: 20px;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            nav.navigation ul {
+                /* display: none; */
+            }
+            nav.navigation ul li{
+                display: block;
+                
+            }
+            nav.navigation .icon ion-icon{
+                display:block;
+            }
+
+        }
     </style>
 </head>
 
@@ -81,8 +106,15 @@
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Contacts</a></li>
         </ul>
+        <div class="icon">
+            <ion-icon name="reorder-four-outline"></ion-icon>
+        </div>
+    </nav>
 
-    </nav>  
+
+    <!-- ionIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
