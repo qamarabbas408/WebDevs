@@ -21,20 +21,20 @@
         </div>
         <ion-icon size="large" id="hamburger-btn" onclick="showMenu()" name="menu-outline" class=""></ion-icon>
         <ul id="menu-items">
-            <li class="hvr-right"><a class="" href="#">Home</a></li>
-            <li class="hvr-right"><a href="#">Courses</a></li>
             <li class="hvr-right"><a href="#">Downloads</a></li>
             <li class="hvr-right"><a href="#">Gallery</a></li>
             <li class="hvr-right"><a href="#">Contacts</a></li>
+            <li class="hvr-right"><a href="explore.html">Explore</a></li>
+            <li class="hvr-right"><a class="active" href="#">Home</a></li>
         </ul>
 
     </nav>
     <!-- showcase section -->
-    <section class="container  position-relative">
+    <section class="containers  positions-relative">
         <div class="overlay"></div>
-        <div class="content position-absolute">
+        <div class="content positions-absolute">
             <span>One Adventure at a Time</span>
-            <a href="" class="hvr-sweep-to-top">Explore</a>
+            <a href="explore.html" class="hvr-sweep-to-top">Explore</a>
         </div>
     </section>
 
@@ -109,8 +109,8 @@
         </div>
     </section>
     <!-- Explore More -->
-    <section class="explore-more position-relative">
-        <div class="overlay position-absolute"></div>
+    <section class="explore-more positions-relative">
+        <div class="overlay positions-absolute"></div>
         <div class="explore-content p-1">
             <h2>Explore More</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat blanditiis voluptatem iste magnam, ex
@@ -145,16 +145,16 @@
             }
         }
 
-        // // detect changes in screen size
-        // window.addEventListener("resize", function () {
-        //     if (window.innerWidth > 768) {
-        //         // if screen size is larger than 768px, show menu items
-        //         menuitems.style.display = "block";
-        //     } else {
-        //         // if screen size is smaller than or equal to 768px, call the showMenu function
-        //         showMenu();
-        //     }
-        // });
+        // detect changes in screen size
+        window.addEventListener("resize", function () {
+            if (window.innerWidth > 768) {
+                // if screen size is larger than 768px, show menu items
+                menuitems.style.display = "block";
+            } else {
+                // if screen size is smaller than or equal to 768px, call the showMenu function
+                showMenu();
+            }
+        });
 
     </script>
 </body>
