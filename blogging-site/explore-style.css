@@ -1,0 +1,15 @@
+
+
+/* login */
+section.login{
+}
+.login .login-content{
+    /* padding: 1em; */
+    width: 600px;
+}
+.login .container {
+    height: 80vh;
+}
+.login img{
+    width: 100%;
+}
